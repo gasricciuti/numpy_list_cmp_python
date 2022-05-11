@@ -36,7 +36,7 @@ if __name__ == '__main__':
     # Metodo Tradicional
     personal_10 = []
     for x in accesos:
-        if x <= 10:
+        if x in range(1,10):
             personal_10.append(x)
     print(len(personal_10))        
     print(personal_10)
