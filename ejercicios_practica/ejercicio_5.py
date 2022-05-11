@@ -29,7 +29,7 @@ if __name__ == '__main__':
     # comprendido en dicho rango pasó por ese molinete
 
     # personal_1_10 = [.....]
-    personal_1_10 = [x for x in accesos if x <= 10]
+    personal_1_10 = [x for x in accesos if x in range(1,10)]
     print(personal_1_10)
     print(len(personal_1_10))
 
