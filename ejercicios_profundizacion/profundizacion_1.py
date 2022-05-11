@@ -1,3 +1,7 @@
+import numpy as np
+import random
+
+
 # Numpy [Python]
 # Ejercicios de profundización
 
@@ -32,5 +36,15 @@ if __name__ == '__main__':
     print('Comenzamos a divertirnos!')
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
+
+    lista_3_numeros = [random.randrange(1,11) for x in range(3)]
+    sumatoria = np.sum(lista_3_numeros)
+    
+    if sumatoria <= 21:
+        print('{} son los numeros que salieron, suman {}. Usted Gana.'.format(lista_3_numeros, sumatoria))
+    else:
+        print('{} son los numeros que salieron, suma {}. Usted Pierde.'.format(lista_3_numeros, sumatoria))
+
+
 
     print("terminamos")
